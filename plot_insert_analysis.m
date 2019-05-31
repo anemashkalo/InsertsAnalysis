@@ -23,8 +23,8 @@ for jj=1:size(bin_vect_fin,2)-1
     binned_data(jj,4)= size(cell_dat(intersect(tmp1,tmp2),4),1);% how many cells contributed to the mean  
 end
 % plot data
- hold on,figure(1),%errorbar(binned_data(:,1), binned_data(:,2), binned_data(:,3),'-*g','LineWidth',1.5);hold on
- plot(binned_data(:,1), binned_data(:,2),'-*g','LineWidth',1.5);hold on
+ hold on,figure(1),errorbar(binned_data(:,1), binned_data(:,2), binned_data(:,3),'-*g','LineWidth',1.5);hold on
+ %plot(binned_data(:,1), binned_data(:,2),'-*g','LineWidth',1.5);hold on
  h = figure(1);
      ylabel([ chan_nm{2} ' / DAPI  in pluri cells']);
      xlabel('Distance from cell types interface,um')
